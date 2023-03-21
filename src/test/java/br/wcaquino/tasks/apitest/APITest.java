@@ -51,7 +51,7 @@ public class APITest {
 			.then()
 				.log().all()
 				.statusCode(400)
-				.body("message", CoreMatchers.containsString("date must not be in past"))
+				.body("message", CoreMatchers.containsString("Due date must not be in past"))
 				
 					
 			;
